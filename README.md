@@ -8,11 +8,11 @@
 
 - **constructor(capacity)** - accepts `capacity` the maximum number of promises that can be executed at every moment
 
-- **.add(fn)** - accepts function with no arguments, which returns promise object that must be executed later. `add` method returns new `Promise` which will resolved/rejected later
+- **.add(fn)** - accepts function with no arguments, which returns promise object that must be executed later. `add` method returns new `Promise` which will be resolved/rejected later
 
 ## Usage
 
-```
+```js
 const PromisePool = require('promise-pool2');
 const pool = new PromisePool(3);  // maximum 3 promises can be executed at every moment
 
@@ -39,6 +39,7 @@ function wait (delay, txt) {
         }, delay);
     });
 }
+
 function print (txt) {
     console.log(txt);
     return txt;
