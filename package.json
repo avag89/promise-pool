@@ -1,0 +1,22 @@
+{
+  "name": "promise-pool2",
+  "version": "1.0.0",
+  "description": "Promise queue by predefined capacity for parallel execution",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha tests/**/*.tests.js"
+  },
+  "keywords": [
+    "Promise",
+    "pool",
+    "queue",
+    "sequence",
+    "parallel"
+  ],
+  "author": "AvagArakelyan",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}
